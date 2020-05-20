@@ -5,9 +5,14 @@ def draw_square():
     window.bgcolor('blue')
 
     tur = turtle.Turtle()
-    for _ in range(4):
-        tur.forward(100)
-        tur.right(90)
+    tur.shape('turtle')
+    tur.color('white','green')
+    # tur.speed(2)
+    for i in range(36):
+        for _ in range(4):
+            tur.forward(150)
+            tur.right(90)
+        tur.right(10+i)
    
 
     window.exitonclick()
